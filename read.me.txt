@@ -1,2 +1,0 @@
-- Pending features:
-+ Get list of item with pagination
