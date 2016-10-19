@@ -1,0 +1,43 @@
+{
+    "contentTypes":{
+        "addNewAction":"Add New",
+        "title":"ContentTypes",
+        "grid":{
+            "name":"Name",
+            "key":"Key",
+            "description":"Description"
+        }
+    },
+    "addOrUpdateContentType":{
+        "title":"Add ContentType",
+        "name":"Name",
+        "inputName":"Please input name",
+        "key":"key",
+        "inputKey":"Please input key",
+        "desc":"Description",
+        "inputDesc":"Please input description",
+        "validation":{
+            "nameIsRequired":"Please input name",
+            "nameAlreadyExisted":"This name is already existed. Please input another name",
+            "keyIsRequired":"Please input key",
+            "keyAlreadyExisted":"This key is already existed. Please input another key",
+            "keyShouldNotHaveWhiteSpace":"The key should not have white space"
+        }
+    },
+    "parameters":{
+        "title":"Parameters",
+        "name":"Name",
+        "key":"Key",
+        "value":"Value",
+        "required":"Required",
+        "encoded":"Encoded",
+        "action":"Action",
+        "validation":{
+            "nameIsRequired":"Name is required",
+            "nameAlreadyExisted":"Name was already exsited",
+            "keyIsRequired":"Key is required",
+            "keyAlreadyExisted":"Key was already exsited",
+            "valueIsRequired":"Value is required"
+        }
+    }
+}

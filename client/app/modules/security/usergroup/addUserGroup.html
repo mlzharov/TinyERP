@@ -1,0 +1,38 @@
+<page>
+    <page-header>
+        {{i18n.security.addOrUpdateUserGroup.title}}
+        <page-actions class="pull-right" [actions]="actions"></page-actions>
+    </page-header>
+    <page-content>
+        <form data-parsley-validate class="form-horizontal form-label-left">
+            <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">{{i18n.security.addOrUpdateUserGroup.name}}</label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="name" [validation]="['security.addOrUpdateUserGroup.validation.nameIsRequire','security.addOrUpdateUserGroup.validation.nameAlreadyExist']"
+                        placeholder="{{i18n.security.addOrUpdateUserGroup.inputName}}" type="text" [(ngModel)]=model.name class="form-control col-md-7 col-xs-12"
+                    />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="pwd">{{i18n.security.addOrUpdateUserGroup.desc}}</label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <textarea id="desc" rows="3" placeholder="{{i18n.security.addOrUpdateUserGroup.inputDesc}}" type="text" [(ngModel)]=model.description
+                        class="form-control col-md-7 col-xs-12"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="pwd">{{i18n.security.addOrUpdateUserGroup.permission}}</label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <select-permissions (onItemUnSelected)="onPermissionRemoved($event)" (onItemSelected)="onPermissionAdded($event)" id="pers"
+                        [values]=model.permissionIds [placeHolder]="i18n.security.addOrUpdateUserGroup.inputPermissions"></select-permissions>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                    <button id="save" (click)="onSaveClicked($event)" type="button" class="btn btn-primary">{{i18n.common.form.save}}</button>
+                    <button id="cancel" (click)="onCancelClicked($event)" type="button" class="btn btn-default">{{i18n.common.form.cancel}}</button>
+                </div>
+            </div>
+        </form>
+    </page-content>
+</page>

@@ -1,0 +1,9 @@
+<page>
+    <page-header>
+        {{i18n.security.permissions.title}}
+           <page-actions class="pull-right" [actions]="model.actions"></page-actions>
+    </page-header>
+    <page-content>
+        <grid [eventKey]="model.eventKey" [options]="model.options" (onItemDeleteClicked)="onDeleteItemClicked($event)" (onItemEditClicked)="onEditItemClicked($event)"></grid>
+    </page-content>
+</page>

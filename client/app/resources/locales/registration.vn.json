@@ -1,0 +1,14 @@
+{
+    "signin": {
+        "title":"Sign Invn",
+        "email":"Emailvn",
+        "password": "Passwordvn",
+        "yourEmail": "Please input your emailvn",
+        "yourPassword": "Please input your passwordvn",
+        "signin":"Sign invn",
+        "forgotPassword":"Forgot your passwordvn",
+        "emailRequired": "Email is requiredvn",
+        "pwdRequired": "Password is requiredvn",
+        "invalidEmailOrPwd":"Invalid email or passwordvn"
+    }
+}

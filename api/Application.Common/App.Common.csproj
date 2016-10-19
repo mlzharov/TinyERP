@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA3EAA76-30EC-41FD-B9B1-C46158B9E821}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App.Common</RootNamespace>
+    <AssemblyName>App.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.4.0.4\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Elasticsearch.Net">
+      <HintPath>..\packages\Elasticsearch.Net.2.0.4\lib\net45\Elasticsearch.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\packages\Ziplib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zlib">
+      <HintPath>..\packages\Ziplib\Ionic.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\packages\LinqKit.1.0\lib\35\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Kennedy">
+      <HintPath>..\packages\MongoDB.Kennedy.Concurrency.1.0.12\lib\MongoDB.Kennedy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nest">
+      <HintPath>..\packages\NEST.2.0.4\lib\net45\Nest.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\packages\Selenium\2.53.1\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\packages\Selenium\2.53.1\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium\2.53.1\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium\2.53.1\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationFactory.cs" />
+    <Compile Include="Authorize\IAuthorization.cs" />
+    <Compile Include="Authorize\IUserLoginAuthorization.cs" />
+    <Compile Include="Authorize\UnAuthorizedException.cs" />
+    <Compile Include="Configurations\AuthenticationElement.cs" />
+    <Compile Include="Configurations\DatabasesElement.cs" />
+    <Compile Include="Configurations\FolderElement.cs" />
+    <Compile Include="Configurations\MailElement.cs" />
+    <Compile Include="Configurations\UITestElement.cs" />
+    <Compile Include="Configurations\LocalizationElement.cs" />
+    <Compile Include="Configurations\PagingElement.cs" />
+    <Compile Include="ConsoleApplication.cs" />
+    <Compile Include="Data\BaseContent.cs" />
+    <Compile Include="Data\BaseContentRepository.cs" />
+    <Compile Include="Data\BaseRepository.cs" />
+    <Compile Include="Data\ConnectionString.cs" />
+    <Compile Include="Data\DbContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DbSet.cs" />
+    <Compile Include="Data\IBaseContent.cs" />
+    <Compile Include="Data\IBaseContentRepository.cs" />
+    <Compile Include="Data\IBaseEntity.cs" />
+    <Compile Include="Data\IBaseRepository.cs" />
+    <Compile Include="Data\IConnectionString.cs" />
+    <Compile Include="Data\IDbContext.cs" />
+    <Compile Include="Data\IDbSet.cs" />
+    <Compile Include="Data\IUnitOfWork.cs" />
+    <Compile Include="Data\KeyNamePair.cs" />
+    <Compile Include="Data\MSSQL\MSSQLDbSet.cs" />
+    <Compile Include="Data\MSSQL\IMSSQLDbContext.cs" />
+    <Compile Include="Data\MSSQL\MSSQLConnectionString.cs" />
+    <Compile Include="Data\MSSQL\MSSQLDbContext.cs" />
+    <Compile Include="Data\PagingData.cs" />
+    <Compile Include="Data\UnitOfWork.cs" />
+    <Compile Include="Dimension.cs" />
+    <Compile Include="DI\Castle\HttpControllerActivator.cs" />
+    <Compile Include="DI\Castle\ConfigServicesContainerTask.cs" />
+    <Compile Include="Helpers\EmailHelper.cs" />
+    <Compile Include="Helpers\GuidHelper.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
+    <Compile Include="Helpers\ObjectHelper.cs" />
+    <Compile Include="Helpers\ParameterHelper.cs" />
+    <Compile Include="Helpers\PhotoHelper.cs" />
+    <Compile Include="Helpers\RegHelper.cs" />
+    <Compile Include="BaseExecutable.cs" />
+    <Compile Include="Helpers\TestCaseHelper.cs" />
+    <Compile Include="Helpers\UtilHelper.cs" />
+    <Compile Include="Mail\EmailContent.cs" />
+    <Compile Include="Mail\IEmailContent.cs" />
+    <Compile Include="Mail\IMailService.cs" />
+    <Compile Include="Mail\MailService.cs" />
+    <Compile Include="MVC\Attributes\ValidateMimeMultipartContentFilter.cs" />
+    <Compile Include="Providers\MultipartFormDataMemoryStreamProvider.cs" />
+    <Compile Include="UITest\BrowserRef.cs" />
+    <Compile Include="UITest\IBrower.cs" />
+    <Compile Include="UITest\Mail\UITestResultNotificationEmail.cs" />
+    <Compile Include="UITest\Runner\IWebDriver.cs" />
+    <Compile Include="UITest\Runner\Selenium\BaseSeleniumWebDriver.cs" />
+    <Compile Include="UITest\Runner\Selenium\SeleniumFirefoxWebDriver.cs" />
+    <Compile Include="UITest\Runner\Selenium\SeleniumScreenshotHelper.cs" />
+    <Compile Include="UITest\Runner\Selenium\SeleniumUIHelper.cs" />
+    <Compile Include="UITest\Runner\Selenium\SeleniumWebDriverFactory.cs" />
+    <Compile Include="UITest\UI\BaseUIAction.cs" />
+    <Compile Include="UITest\UI\IUIAction.cs" />
+    <Compile Include="UITest\UI\UIActionFactory.cs" />
+    <Compile Include="UITest\UI\UIAssertAction.cs" />
+    <Compile Include="UITest\UI\UIClickAction.cs" />
+    <Compile Include="UITest\UI\UINavigateAction.cs" />
+    <Compile Include="UITest\UI\UIInputAction.cs" />
+    <Compile Include="UITest\Writer\BaseTestWriter.cs" />
+    <Compile Include="UITest\Writer\ExcelTestWriter.cs" />
+    <Compile Include="Validation\ElementNotFound.cs" />
+    <Compile Include="Extensions\DecimalExtension.cs" />
+    <Compile Include="Extensions\EnumExtension.cs" />
+    <Compile Include="Extensions\LinqExtension.cs" />
+    <Compile Include="Ftp\FTPClient.cs" />
+    <Compile Include="Ftp\FTPCreateFolderRequest.cs" />
+    <Compile Include="Ftp\FTPFileUploadRequest.cs" />
+    <Compile Include="Ftp\FTPFolderUploadRequest.cs" />
+    <Compile Include="Ftp\FTPHelper.cs" />
+    <Compile Include="Ftp\FTPRequest.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\ResourceHelper.cs" />
+    <Compile Include="Helpers\RoleHelper.cs" />
+    <Compile Include="Helpers\SessionHelper.cs" />
+    <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="IApplication.cs" />
+    <Compile Include="IExecutable.cs" />
+    <Compile Include="IResourceItem.cs" />
+    <Compile Include="MVCApplication.cs" />
+    <Compile Include="MVC\Attributes\AuthenticationAttribute.cs" />
+    <Compile Include="MVC\BaseController.cs" />
+    <Compile Include="Bootstrap.cs" />
+    <Compile Include="Configurations\Configuration.cs" />
+    <Compile Include="Data\BaseEntity.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Helpers\DateTimeHelper.cs" />
+    <Compile Include="Helpers\EncodeHelper.cs" />
+    <Compile Include="Helpers\HttpHelper.cs" />
+    <Compile Include="Helpers\TokenHelper.cs" />
+    <Compile Include="MVC\CustomRazoViewEngine.cs" />
+    <Compile Include="MVC\UploadFile\FileUploader.cs" />
+    <Compile Include="Paging\IPagingData.cs" />
+    <Compile Include="Paging\IPagingRequest.cs" />
+    <Compile Include="Paging\PagingData.cs" />
+    <Compile Include="Paging\PagingRequest.cs" />
+    <Compile Include="Tasks\BaseTask.cs" />
+    <Compile Include="Tasks\IApplicationReadyTask.cs" />
+    <Compile Include="Tasks\IModelCreatingInDbContext.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DI\Castle\CastleContainer.cs" />
+    <Compile Include="DI\Castle\ControllerFactory.cs" />
+    <Compile Include="DI\Castle\MvcRegisterCastleContainerTask.cs" />
+    <Compile Include="DI\IBaseContainer.cs" />
+    <Compile Include="DI\IBootstrapper.cs" />
+    <Compile Include="DI\IoC.cs" />
+    <Compile Include="Extensions\DateTimeExtension.cs" />
+    <Compile Include="Extensions\IntExtension.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Extensions\TimeSpanExtension.cs" />
+    <Compile Include="Extensions\IntegerExtension.cs" />
+    <Compile Include="Helpers\AssemblyHelper.cs" />
+    <Compile Include="Helpers\IOHelper.cs" />
+    <Compile Include="Http\IResponseData.cs" />
+    <Compile Include="Http\ResponseData.cs" />
+    <Compile Include="Tasks\IApplicationRequestExecutingTask.cs" />
+    <Compile Include="Logging\Attributes\HandleExceptionAttribute.cs" />
+    <Compile Include="Logging\Attributes\LogAttribute.cs" />
+    <Compile Include="Logging\DefaultLogger.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\LogType.cs" />
+    <Compile Include="Mapping\IMappedFrom.cs" />
+    <Compile Include="BaseApplication.cs" />
+    <Compile Include="Tasks\Error\UnHandledError.cs" />
+    <Compile Include="Tasks\IApplicationEndedTask.cs" />
+    <Compile Include="Tasks\IApplicationRequestEndedTask.cs" />
+    <Compile Include="Tasks\IServiceContainerConfiguredTask.cs" />
+    <Compile Include="Tasks\IUnHandledErrorTask.cs" />
+    <Compile Include="Tasks\IApplicationRequestStartedTask.cs" />
+    <Compile Include="Tasks\IApplicationStartedTask.cs" />
+    <Compile Include="Tasks\IBaseTask.cs" />
+    <Compile Include="Tasks\IRouteConfiguredTask.cs" />
+    <Compile Include="Tasks\Mapping\AutoMapperConfigurationTask.cs" />
+    <Compile Include="Tasks\Request\RequestEnded.cs" />
+    <Compile Include="Tasks\Request\RequestStarted.cs" />
+    <Compile Include="Tasks\Routing\RegisterDefaultRouteTask.cs" />
+    <Compile Include="Tasks\TaskArgument.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="UITest\enum.cs" />
+    <Compile Include="UITest\Environment\Environment.cs" />
+    <Compile Include="UITest\Environment\EnvirontmentFactory.cs" />
+    <Compile Include="UITest\Environment\IEnvirontment.cs" />
+    <Compile Include="UITest\ITestReport.cs" />
+    <Compile Include="UITest\Suite\ITestCaseCollection.cs" />
+    <Compile Include="UITest\Suite\TestCase.cs" />
+    <Compile Include="UITest\Suite\TestCaseAction.cs" />
+    <Compile Include="UITest\Suite\TestDataKeyNamePair.cs" />
+    <Compile Include="UITest\Suite\TestCaseActionRef.cs" />
+    <Compile Include="UITest\Suite\TestCaseCollection.cs" />
+    <Compile Include="UITest\Suite\TestCaseData.cs" />
+    <Compile Include="UITest\Suite\TestCaseRef.cs" />
+    <Compile Include="UITest\Suite\TestIncludeRef.cs" />
+    <Compile Include="UITest\Suite\TestSuiteRef.cs" />
+    <Compile Include="UITest\Runner\ITestRunner.cs" />
+    <Compile Include="UITest\Runner\Selenium\SeleniumTestRunner.cs" />
+    <Compile Include="UITest\Runner\TestRunnerFactory.cs" />
+    <Compile Include="UITest\Suite\ITestSuite.cs" />
+    <Compile Include="UITest\Suite\TestCaseCollectionRef.cs" />
+    <Compile Include="UITest\Suite\TestSuite.cs" />
+    <Compile Include="UITest\TestReport.cs" />
+    <Compile Include="UITest\UITestExecutor.cs" />
+    <Compile Include="UITest\Writer\ConsoleTestWriter.cs" />
+    <Compile Include="UITest\Writer\ITestWriter.cs" />
+    <Compile Include="UITest\Writer\TestWriterFactory.cs" />
+    <Compile Include="Validation\AuthenticationException.cs" />
+    <Compile Include="Validation\IValidationException.cs" />
+    <Compile Include="Validation\ValidationError.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation\ValidationException.cs" />
+    <Compile Include="WebApiApplication.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configurations\configuration.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\configuration.release.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\configuration.debug.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tasks\Attribute\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y /S /r "$(ProjectDir)Configurations\configuration.debug.config" "$(SolutionDir)Application.Api\Config\"
+xcopy /Y /S /r "$(ProjectDir)Configurations\configuration.debug.config" "$(SolutionDir)App.UI.Test\Config\"
+
+xcopy /Y /S /r "$(ProjectDir)Configurations\configuration.release.config" "$(SolutionDir)Application.Api\Config\"
+xcopy /Y /S /r "$(ProjectDir)Configurations\configuration.release.config" "$(SolutionDir)App.UI.Test\Config\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

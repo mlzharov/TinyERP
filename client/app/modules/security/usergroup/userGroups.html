@@ -1,0 +1,10 @@
+<page>
+    <page-header>
+        {{i18n.security.userGroups.title}}
+        <page-actions class="pull-right" [actions]="model.actions"></page-actions>
+    </page-header>
+    <page-content>
+        <grid (onItemDeleteClicked)="onDeleteItemClicked($event)" (onItemEditClicked)="onEditItemClicked($event)" [eventKey]="model.eventKey"
+            [options]="model.options"></grid>
+    </page-content>
+</page>

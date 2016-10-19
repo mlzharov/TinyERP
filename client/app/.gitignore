@@ -1,0 +1,4 @@
+dist
+*.js.map
+*.js
+app/resources/

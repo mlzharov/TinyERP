@@ -1,0 +1,9 @@
+<ul class="nav" [ngClass]="{'child_menu': isChild, 'side-menu': !isChild}">
+  <li *ngFor="let item of items; let i = index">
+    <a [routerLink] = "[item.url]"  title="{{item.text}}">
+      <i class="{{item.class}}"></i> {{item.text}} 
+      <span class="fa fa-chevron-down" *ngIf="item.items && item.items.length>0"></span>
+    </a>
+    <menu-item *ngIf="item.items.length>0" [isChild]=true [items]=item.items></menu-item>
+  </li>
+</ul>

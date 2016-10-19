@@ -1,0 +1,9 @@
+<div class="alert alert-danger error-msg" role="alert" *ngIf="errors.length>0">
+    <ul>
+        <li *ngFor="let error of errors">
+            <a href="#" class="alert-link">
+                {{error.msg}}
+            </a>
+        </li>
+    </ul>
+</div>

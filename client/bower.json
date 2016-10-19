@@ -1,0 +1,28 @@
+{
+  "name": "oceanc",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootswatch-dist": "paper",
+    "components-font-awesome": "~4.5.0",
+    "hammerjs": "~2.0.6"
+  },
+  "overrides": {
+    "bootswatch-dist": {
+      "main": [
+        "css/bootstrap.css",
+        "js/bootstrap.js"
+      ]
+    }
+  }
+}

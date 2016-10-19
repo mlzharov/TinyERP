@@ -1,0 +1,5 @@
+<div id="{{id}}" class="btn-group" data-toggle="buttons">
+    <label *ngFor="let item of getOptions()" class="btn" (click)="onItemClicked(item)" [ngClass]="{'btn-default':!item.active,'btn-primary':item.active}">
+        <input name="{{id}}" value="{{item.value}}" type="radio"> {{item.text}}
+    </label>
+</div>

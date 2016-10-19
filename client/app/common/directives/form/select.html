@@ -1,0 +1,3 @@
+<select id="{{id}}" class="select2_multiple form-control {{model.cssClass}}" multiple="multiple">
+    <option *ngFor="let item of model.items" value="{{item.id}}">{{item.name}}</option>
+</select>

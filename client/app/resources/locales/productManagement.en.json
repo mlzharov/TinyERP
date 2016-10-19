@@ -1,0 +1,68 @@
+{
+    "categories":{
+        "title":"Categories",
+        "addCategoryAction":"Add Category",
+        "grid":{
+            "name":"Name",
+            "key":"Key",
+            "status":"Status",
+            "description":"Description"
+        },
+        "validation":{
+            "idIsInvalid":"Invlaid Item Id",
+            "itemNotExist":"Category does not exist."
+        }
+    },
+    "addOrUpdateCategory":{
+        "title":"Add Category",
+        "parent":"Parent Category",
+        "selectParent":"Please select parent Category",
+        "name":"Name",
+        "inputName":"Please input name of Category",
+        "desc":"Description",
+        "inputDesc":"Please input description for Category",
+        "status":"Status",
+        "validation":{
+            "nameIsRequired":"Please input name of Category",
+            "nameAlreadyExisted":"This name is already existed. Please input another name",
+            "itemNotExist":"Curent Category was not existed"
+        }
+    },
+    "products":{
+        "title":"Products",
+        "addProductAction":"Add Product",
+        "grid":{
+            "name":"Name",
+            "key":"Key",
+            "status":"Status",
+            "description":"Description",
+            "price":"Price",
+            "fromDate":"From Date",
+            "toDate":"To Date"
+        },
+        "validation":{
+            "idIsInvalid":"Invlaid Item Id",
+            "itemNotExist":"Product does not exist."
+        }
+    },
+    "addOrUpdateProduct":{
+        "title":"Add Product",
+        "name":"Name",
+        "inputName":"Please input name of Product",
+        "desc":"Description",
+        "inputDesc":"Please input description for Product",
+        "status":"Status",
+        "price":"Price",
+        "fromDate":"From Date",
+        "toDate":"To Date",
+        "baseInfomation":"Base Information",
+        "category":"Category",
+        "selectCategory":"Select Category",
+        "photos":"Photos",
+        "validation":{
+            "nameIsRequired":"Please input name of Product",
+            "nameAlreadyExisted":"This name is already existed. Please input another name",
+            "itemNotExist":"Curent Product was not existed"
+        }
+    }
+}

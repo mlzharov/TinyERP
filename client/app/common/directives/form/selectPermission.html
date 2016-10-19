@@ -1,0 +1,6 @@
+<select id="{{id}}" class="select2_multiple form-control {{model.cssClass}}" multiple="multiple">
+    <!--<optgroup label="{{group.name}}" *ngIf="model.mode==SelectMode.Group" *ngFor="let group of model.groups">
+        <option *ngFor="let permission of group.permissions" value="{{permission.key}}">{{permission.value}}</option>
+    </optgroup>-->
+    <option *ngFor="let permission of model.permissions" value="{{permission.id}}">{{permission.name}}</option>
+</select>

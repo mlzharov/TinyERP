@@ -1,0 +1,10 @@
+{
+    "NotFound": "Not found site vn",
+    "InvalidRequest": "Invalid request",
+    "httpError":{
+      "notFound":"Requested resource was not found. Please contact system administration for more information",
+      "unAuthorized":"You was not authorized to access to requested resource. Please contact system administration for more information" ,
+      "genericError":"Unknow error occured. Please contact system administration for more information",
+      "badRequest":"Your request was considered as invalid. Please contact system administration for more information"
+    }
+}

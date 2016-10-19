@@ -1,0 +1,36 @@
+<page>
+    <page-header>
+        {{i18n.setting.addOrUpdateContentType.title}}
+    </page-header>
+    <page-content>
+        <form data-parsley-validate class="form-horizontal form-label-left">
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">{{i18n.setting.addOrUpdateContentType.name}}</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="name" [validation]="['setting.addOrUpdateContentType.validation.nameIsRequired','setting.addOrUpdateContentType.validation.nameAlreadyExisted']" placeholder="{{i18n.setting.addOrUpdateContentType.inputName}}" type="text"  [(ngModel)]=model.name class="form-control col-md-7 col-xs-12" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">{{i18n.setting.addOrUpdateContentType.key}}</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input [validation]="['setting.addOrUpdateContentType.validation.keyIsRequired','setting.addOrUpdateContentType.validation.keyAlreadyExisted','setting.addOrUpdateContentType.validation.keyShouldNotHaveWhiteSpace']" placeholder="{{i18n.setting.addOrUpdateContentType.inputKey}}" type="text"  [(ngModel)]=model.key class="form-control col-md-7 col-xs-12" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">{{i18n.setting.addOrUpdateContentType.desc}}</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <textarea rows="3" placeholder="{{i18n.setting.addOrUpdateContentType.inputDesc}}" type="text"  [(ngModel)]=model.description class="form-control col-md-7 col-xs-12"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <parameters [(model)]=model.parameters></parameters>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                        <button id="save" (click)="onSaveClicked($event)" type="button" class="btn btn-primary">{{i18n.common.form.save}}</button>
+                        <button id="cancel" (click)="onCancelClicked($event)" type="button" class="btn btn-default">{{i18n.common.form.cancel}}</button>
+                    </div>
+                </div>
+            </form>
+    </page-content>
+</page>

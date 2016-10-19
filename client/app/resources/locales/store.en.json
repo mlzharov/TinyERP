@@ -1,0 +1,84 @@
+{
+    "orders":{
+        "title":"Orders",
+        "grid":{
+            "orderNumber":"Order No.",
+            "contactName":"Contact Name",
+            "contactEmail":"Contact Email",
+            "contactPhone":"Contact Phone",
+            "price":"Price",
+            "numberOfItems":"Number Of Item(s)",
+            "status":"Status",
+            "transactionDate":"Transation Date"
+        }
+    },
+    "accounts":{
+        "title":"Accounts",
+        "addAccountAction":"Add Account",
+        "grid":{
+            "name":"Name",
+            "email":"Email",
+            "userName":"User Name",
+            "status":"Status",
+            "description":"Description"
+        },
+        "validation":{
+            "idIsInvalid":"Invlaid Item Id",
+            "itemNotExist":"Category does not exist."
+        }
+    },
+
+    
+    "addOrUpdateAccount":{
+        "title":"Add Account",
+        "name":"Name",
+        "inputName":"Please input name of Account",
+        "email":"Email",
+        "inputEmail":"Please input email of Account",
+        "userName":"User Name",
+        "inputuserName":"Please input user name of Account",
+        "desc":"Description",
+        "inputDesc":"Please input description for Account",
+        "status":"Status",
+        "validation":{
+            "nameIsRequired":"Please input name of Account",
+            "nameAlreadyExisted":"This name is already existed. Please input another name",
+            "emailIsRequired":"Please input email of Account",
+            "emailAlreadyExisted":"This email is already existed. Please input another name",
+            "userNameIsRequired":"Please input user name of Account",
+            "userNameAlreadyExisted":"This user name is already existed. Please input another name",
+            "itemNotExist":"Curent Account was not existed"
+        }
+    },
+    "stores":{
+        "title":"Stores",
+        "addStoreAction":"Add Store",
+        "grid":{
+            "name":"Name",
+            "owner":"Owner",
+            "status":"Status",
+            "description":"Description"
+        },
+        "validation":{
+            "idIsInvalid":"Invlaid Item Id",
+            "itemNotExist":"Store does not exist."
+        }
+    },
+    "addOrUpdateStore":{
+        "title":"Add Store",
+        "name":"Name",
+        "inputName":"Please input name of Store",
+        "desc":"Description",
+        "inputDesc":"Please input description for Store",
+        "status":"Status",
+        "owner":"Owner",
+        "selectCategory":"Please select owner account of the store",
+        "validation":{
+            "nameIsRequired":"Please input name of Store",
+            "nameAlreadyExisted":"This name is already existed. Please input another name",
+            "ownerIsRequired":"Please select owner account of Store",
+            "ownerNotExisted":"This owner was not existed, please select another",
+            "itemNotExist":"Curent Store was not existed"
+        }
+    }
+}

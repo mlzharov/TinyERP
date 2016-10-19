@@ -1,0 +1,56 @@
+<div>
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col" *ngIf="isAuthenticated">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="/" class="site_title"><i class="fa app-icon"></i> <span>TinyERP</span></a>
+            </div>
+            <div class="clearfix"></div>
+            <!-- menu profile quick info -->
+            <!--<user-quick-profile-info></user-quick-profile-info>
+            <br />-->
+            <!-- /menu profile quick info -->
+            
+            <!-- sidebar menu -->
+              <menu-sidebar ></menu-sidebar>
+            <!-- /sidebar menu -->
+            
+            <!-- /menu footer buttons -->
+            <sidebar-footer></sidebar-footer>
+            
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <user-quick-profile-info [displayMode]=ProfileDisplayMode.AvatarAndNameQuick></user-quick-profile-info>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col content-region" role="main">
+          <error-message pattern="common."></error-message>
+          <router-outlet></router-outlet>
+        </div>
+        <!-- /page content -->
+        <!-- footer content -->
+        <page-footer></page-footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+</div>
+    

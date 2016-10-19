@@ -1,0 +1,14 @@
+{
+    "signin": {
+        "title":"Sign In",
+        "email":"Email",
+        "password": "Password",
+        "yourEmail": "Please input your email",
+        "yourPassword": "Please input your password",
+        "signin":"Sign in",
+        "forgotPassword":"Forgot your password",
+        "emailRequired": "Email is required",
+        "pwdRequired": "Password is required",
+        "invalidEmailOrPwd":"Invalid email or password"
+    }
+}

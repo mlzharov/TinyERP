@@ -1,0 +1,11 @@
+<div id="{{id}}" class="form_wizard wizard_horizontal">
+    <ul class="wizard_steps">
+        <li *ngFor="let step of model.items">
+            <a href="#{{step.id}}">
+                <span class="step_no">{{step.index}}</span>
+                <span class="step_descr">{{step.title}}<br /><small>{{step.description}}</small></span>
+            </a>
+        </li>
+    </ul>
+        <ng-content  select="form-wizardItem"></ng-content>
+</div>

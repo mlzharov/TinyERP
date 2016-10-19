@@ -1,0 +1,4 @@
+<div>
+    <input autocomplete="off" (change)=onChanged($event) id="{{id}}" type="text" class="form-control" [(ngModel)]=model >
+    <span *ngIf="type == ValueType.Currency" class="fa fa-money form-control-feedback right" aria-hidden="true"></span>
+</div>

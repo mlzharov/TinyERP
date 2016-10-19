@@ -1,0 +1,6 @@
+<div class="form-group">
+    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">{{labelText}}</label>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <textarea  rows="3" (change)="onValueChanged($event)" placeholder="{{placeHolderText}}" type="text" [(ngModel)]=model class="form-control col-md-7 col-xs-12"></textarea>
+    </div>
+</div>

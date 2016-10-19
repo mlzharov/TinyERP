@@ -1,0 +1,24 @@
+<page>
+    <page-header>
+        {{i18n.security.addOrUpdateRole.title}}
+    </page-header>
+    <page-content>
+        <form-default>
+            <form-text-input [placeHolderText]=i18n.security.addOrUpdateRole.inputName [labelText]=i18n.security.addOrUpdateRole.name
+                [validation]="['security.addOrUpdateRole.validation.nameIsRequire','security.addOrUpdateRole.validation.keyAlreadyExisted']"
+                [(model)]=model.name>
+            </form-text-input>
+            <form-textarea [placeHolderText]=i18n.security.addOrUpdateRole.inputDesc [labelText]=i18n.security.addOrUpdateRole.desc [(model)]=model.description>
+            </form-textarea>
+
+            <form-permission-select [(values)]=model.permissions [placeHolderText]=i18n.security.addOrUpdateRole.inputPermissions [labelText]=i18n.security.addOrUpdateRole.permission
+                [(model)]=model.permissions>
+            </form-permission-select>
+
+            <form-footer>
+                <button id="save" (click)="onSaveClicked($event)" type="button" class="btn btn-primary">{{i18n.common.form.save}}</button>
+                <button id="cancel" (click)="onCancelClicked($event)" type="button" class="btn btn-default">{{i18n.common.form.cancel}}</button>
+            </form-footer>
+        </form-default>
+    </page-content>
+</page>

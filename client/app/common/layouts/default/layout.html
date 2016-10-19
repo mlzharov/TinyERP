@@ -1,0 +1,5 @@
+<div [class]="isAuthenticated?'':'unauthorized'">
+    <loading-indicator></loading-indicator>
+    <default-authenticated-layout [isAuthenticated] ="isAuthenticated"></default-authenticated-layout>
+    <!--<default-unauthenticated-layout *ngIf="!isAuthenticated"></default-unauthenticated-layout>-->
+</div>

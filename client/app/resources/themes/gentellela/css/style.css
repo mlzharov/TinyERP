@@ -1,0 +1,86 @@
+.content-region{
+    padding-top: 42px!important;
+}
+/*Unauthorized*/
+.unauthorized{}
+.unauthorized .content-region,
+.unauthorized footer
+{
+  margin-left: 0px!important;
+}
+.unauthorized .top_nav{display: none!important;}
+.unauthorized .content-region{
+  display: table;
+  width: 100%;
+}
+/*End of Unauthorized*/
+/*Page*/
+.page .page-title {
+  height: 45px;
+}
+
+.page-singin{
+  margin-top: 50px!important;
+}
+/*End of Page*/
+
+.loading {
+    opacity: 0;
+    transition: opacity .8s ease-in-out;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: -1;
+    
+}
+.loading.show{
+    display: block;
+    opacity: 0.5;
+    z-index: 1000;
+    background-image: url("../images/loading.gif");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 64px;
+}
+
+.error-msg{
+    margin-top: 5px;
+}
+.error-msg .alert-link{
+    font-weight: normal!important;
+    color:white!important;
+}
+
+
+.user-quick-profile{
+    margin-top:5px!important;
+}
+
+
+.validation.invalid
+{
+    background-image: url("../images/error.png")!important;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 24px 24px;
+    padding-right: 24px;
+    border:solid 1px red!important;
+}
+.validation.invalid::-webkit-input-placeholder,
+.validation.invalid:-moz-placeholder,
+.validation.invalid::-moz-placeholder,
+.validation.invalid:-ms-input-placeholder {
+   color:red!important;
+}
+
+.app-icon{
+    background-image: url("../../../images/logo_64.png");
+    background-size: 32px 32px;
+    width:32px;
+    height: 32px;
+    display: inline-flex;
+    margin: auto 0px;
+}
